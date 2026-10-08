@@ -1,0 +1,41 @@
+#include<iostream>
+#define max_size 5
+using namespace std;
+void dequeue();
+void display();
+int f=0,r=4,queue[max_size]={10,20,30,40,50};
+int main()
+{
+    display();
+    dequeue();
+    display();
+    return 0;
+}
+void display()
+{
+    if(f==-1)
+        cout<<"empty queue";
+    else
+    {
+        for(int i=f;i<=r;i++)
+        {
+            cout<<queue[i]<<" ";
+        }
+        cout<<"\n";
+    }
+}
+void dequeue()
+{
+    if(f==-1)
+        cout<<"Empty queue";
+    else
+    {
+        cout<<"dequeue element is "<<queue[f]<<endl;
+        f++;
+        if(f>r)
+        {
+        f=-1;
+        r=-1;
+        }
+    }
+}

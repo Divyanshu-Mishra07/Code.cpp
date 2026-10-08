@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int pos;
+ cout<<"enter position to delete";
+ cin>>pos;
+int arr[10]={10,20,30,40,50,60,70,90,80,100};
+for(int i=pos-1;i<10;i++)
+arr[i]=arr[i+1];
+for(int i=0;i<9;i++)
+cout<<"index is "<<i<<" value is "<<arr[i]<<"\n";
+return 0;
+}

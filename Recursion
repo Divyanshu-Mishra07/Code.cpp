@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int fact(int n)
+{
+    int res=1;
+    while(n!=0)
+    {
+        res=res*n;
+        n--;
+    }
+    return res;
+}
+int main()
+{
+    printf("%d",fact(15));
+    return 0;
+}
